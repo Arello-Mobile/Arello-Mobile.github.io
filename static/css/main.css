@@ -1,0 +1,1489 @@
+/*********Fonts************/
+@font-face {
+	font-family: 'DINCondensedWebRegular';
+	src: url('../fonts/DNC57__W.eot');
+	src:
+		url('../fonts/DNC57__W.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DNC57__W.woff') format('woff'),
+		url('../fonts/DNC57__W.ttf') format('truetype'),
+		url('../fonts/DNC57__W.svg#DINCondensedWeb-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*********Global************/
+html, body { font-family: 'DINCondensedWebRegular', 'OpenSansRegular', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    position: relative;
+    background: #f6f6f6;
+}
+
+input, select, textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-radius: 0;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.btn { border-radius: 0; }
+
+a {
+    text-decoration: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+label {
+    font-weight: normal;
+}
+
+.text-light-danger { color: #F7FD72; }
+
+.modal-open { padding-right: 0 !important; }
+.row-no-padding[class*="col-"] {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.col-no-padding {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.rel { position: relative; }
+.a-page {
+    min-height: 994px;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+
+.a-page .content-left, .a-page .content-right {
+    padding-top: 65px;
+    padding-bottom: 55px;
+}
+
+.a-page .content-left { padding-left: 200px; }
+
+.a-page .content-right { padding-left: 80px; }
+
+.a-page h1 {
+    font-size: 100px;
+    color: #e76c50;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    line-height: 90px;
+    margin-top: 45px;
+}
+
+.a-page .page-title {
+    color: #c0c0c0;
+    font-size: 30px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.a-page .page-text {
+    color: #c0c0c0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.a-page .list-about {
+    color: #e76c50;
+    font-size: 18px;
+    padding: 18px 0 0 0;
+}
+.a-page .list-about li {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.a-page .list-about b {
+    font-weight: normal;
+    font-size: 50px;
+    display: block;
+    line-height: 50px;
+}
+
+.modal-body { background: rgba(255,255,255,0.9); }
+.modal-body h3 { margin-top: 0;  }
+
+/*********Menu************/
+.menu {
+    transform: translateZ(0);
+    position: fixed;
+    width: 144px;
+    min-width: 144px;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    min-height: 100%;
+    z-index: 150;
+    left: -34px;
+}
+
+.menu .menu-wrapper {
+    background-color: rgba(29, 29, 29, 0.3);
+    height: 100%;
+}
+
+.top-nav {
+    opacity: 0.8;
+    color: #fff;
+    font-size: 30px;
+}
+
+.menu:hover .top-nav {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.menu .bg-nav {
+    width: 33px;
+    height: 30px;
+    top: 50%;
+    right: 43px;
+    position: absolute;
+}
+
+
+.menu .logo {
+	-webkit-transform: translate3d(0,0,0);
+	display: inline-block;
+    margin-top: 47px;
+	-webkit-animation: logob 1s ease 1; /* Chrome, Safari, Opera */
+	animation: logo 1s 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo.anim {
+	-webkit-transform: translate3d(0,0,0);
+	display: inline-block; margin-top: 37px;
+	-webkit-animation: logo ease 1s 1; /* Chrome, Safari, Opera */
+	animation: logo 1s 1;
+}
+
+/*Logo Animation*/
+@media only screen and (min-width: 1201px) {
+    @keyframes logo {
+        0% {
+            margin-top: 47px;
+        }
+        100% {
+            margin-top: 127px;
+        }
+    }
+
+    @-webkit-keyframes logo {
+        0% {
+            margin-top: 47px;
+        }
+        100% {
+            margin-top: 127px;
+        }
+    }
+
+    @keyframes logob {
+        0% {
+            margin-top: 127px;
+        }
+        100% {
+            margin-top: 47px;
+        }
+    }
+
+    @-webkit-keyframes logob {
+        0% {
+            margin-top: 127px;
+        }
+        100% {
+            margin-top: 47px;
+        }
+    }
+}
+
+.menu.top { max-height: 200px }
+
+.menu.top .logo { right: 0; }
+
+.menu.top .menu-wrapper { background: none; }
+
+.menu.top .bg-nav { display: none; }
+
+.menu.top .logo {
+    margin-top: 127px;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-animation: logo 1s 1; /* Chrome, Safari, Opera */
+	animation: logo 1s 1;
+}
+
+/*********Main************/
+#main { background: #e76c50; }
+
+.main-nav {
+    margin-left: 262px;
+    padding-top: 148px;
+    margin-bottom: 0;
+}
+
+.main-nav li { margin-top: 40px; }
+
+.main-nav li:first-child { margin-top: 0; }
+
+.main-nav li.social-icons { margin-top: 100px; }
+
+.main-nav a {
+    display: inline-block;
+    font-size: 100px;
+    color: #ffffff;
+    line-height: 76px;
+    text-transform: uppercase;
+}
+
+.main-nav a:focus, .main-nav a:active, .main-nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-nav a:hover { text-decoration: underline; color: #1780be; }
+
+#contact label { display: none; }
+
+/*********Mobile************/
+#mobile {
+    background: #ffffff;
+    min-height: 500px;
+}
+#mobile-anchor {
+    position: absolute;
+    top: -320px;
+    right: 0;
+    left: 0;
+}
+
+#mobile .dive {
+    background: #fff url('../img/tmp-dive-gide.png') bottom right no-repeat;
+    background-size: 400px;
+    margin-right: -15px;
+    min-height: 800px;
+}
+
+#mobile .border-dive { border-right: 4px solid rgba(245, 245, 245, 0.9); }
+
+#mobile .mobile-stats li { margin-top: 78px; }
+#mobile .mobile-stats li:first-child { margin-top: 0; }
+#mobile .mobile-stats { margin-bottom: 49px; }
+
+/*.portfolio.blur img, .pw-clients.blur img {*/
+    /*-webkit-filter: blur(4px);*/
+    /*-webkit-transform: translateZ(0);*/
+    /*filter: blur(4px);*/
+/*}*/
+
+.portfolio-hover .text {
+    font-size: 30px;
+    color: #1780be;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.portfolio-hover .text a {
+    color: #e76c50;
+    text-decoration: underline;
+}
+
+.portfolio .portfolio-hover {
+    position: static;
+    top: 0;
+    width: 100%;
+}
+
+.portfolio .portfolio-hover .text {
+    position: static;
+}
+
+.clients-logos [class^=col-]{
+	min-height: 175px;
+	text-align: center;
+	position: relative;
+	line-height: 175px;
+	vertical-align: middle;
+}
+.clients-logos [class^=col-]:nth-child(odd) { text-align: right; }
+.clients-logos [class^=col-]:nth-child(even) { text-align: left; }
+
+.clients-logos img {
+    display: inline-block;
+    width: 100%;
+    max-width: 220px;
+}
+
+
+/****************Service****************/
+#products {
+    min-height: 500px;
+    background: none;
+}
+
+#products .background-wrapper {
+    background: #40619b url('../img/bg-pw_2500.png') top left no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#products .pw { border-right: 4px solid rgba(9, 37, 99, 0.8); }
+
+#products h1 { max-width: 65%; }
+
+#products .pw-stats {
+    background: url('../img/pw-logo.png') 0 0 no-repeat;
+    background-size: 85px;
+    margin-bottom: 72px;
+    padding: 18px 0 0 100px;
+}
+#products .pw-stats li { margin-bottom: 55px; }
+
+.pw-device { float: right; margin-right: -15px; }
+
+.pw-logo {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-right: 60px;
+}
+.pw-logo-item {
+    min-height: 130px;
+    line-height: 130px;
+    vertical-align: middle;
+}
+.pw-logo img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.pw-logo [class^=col-] {
+    min-height: 143px;
+    vertical-align: middle;
+    line-height: 143px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#pwLogoCarousel { height: 636px; }
+
+#products .pw-link {
+    padding-right: 40px;
+    text-align: center;
+}
+#products .pw-link a {
+    color: #e76c50;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#products .pw-link p {
+    color: #e76c50;
+    font-size: 20px;
+    text-align: left;
+    padding: 0 76px;
+    line-height: 22px;
+    margin-top: 14px;
+    text-transform: uppercase;
+}
+
+.pw-over-content {
+    top: 50%;
+    position: absolute;
+    margin-top: -86px;
+    margin-left: -30px;
+}
+.pw-over .page-title {
+    color: #c0c0c0;
+    font-size: 30px;
+    margin-top: 103px;
+    text-transform: uppercase;
+    padding-left: 121px;
+}
+.pw-clients .pw-over {
+    position: static;
+    background: none;
+    padding: 0;
+    margin-top: 15px;
+    width: auto;
+}
+.pw-clients .pw-over .pw-over-content {
+    position: static;
+    margin: 0;
+}
+
+.pw-device {
+    background: transparent;
+    max-width: 324px;
+    min-width: 260px;
+}
+
+.pw-device img {
+    width: 100%;
+    padding-top: 0;
+}
+
+.pw-dev {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 344px;
+}
+
+/****************Game dev*******************/
+#gamedev {
+    background: #fff url('../img/gamedev2.jpg') left bottom repeat-x;
+    background-size: 1920px;
+    position: relative;
+    min-height: 930px;
+    height: 930px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#gamedev .fly1, #gamedev .fly2, #gamedev .dragoon {
+    -webkit-transform: translate3d(0,0,0);
+    z-index: 11;
+    position: absolute;
+}
+#gamedev .fly1 {
+    width: 170px;
+    height: 260px;
+    background: url('../img/fly1.png') 0 0 no-repeat;
+    background-size: 100%;
+    left: 65%;
+    top: 27%;
+}
+#gamedev .fly2 {
+    width: 461px;
+    height: 350px;
+    background: url('../img/fly2-fire.png') 50% 50% no-repeat;
+    background-size: 100%;
+    left: 68%;
+    top: 25%;
+}
+#gamedev .dragoon {
+    width: 380px;
+    height: 458px;
+    background-size: 100%;
+    left: 30%;
+    top: 20%;
+}
+#gamedev .dragoon img { width: 100%; }
+.app-dragoon {
+    width: 220px;
+    padding-top: 30px;
+}
+.fly1, .fly2, .dragoon { opacity: 0; }
+
+#gamedev .gamedev-castle {
+    background: url('../img/gamedev-castle2.png') 50% 100% repeat-x;
+    background-size: 1920px;
+    min-height: 930px;
+}
+
+#gamedev .cloud { background: url('../img/gamedev-cloud.png') 50% 30px repeat-x; }
+
+#gamedev .sticky { background: #ffffff; }
+#gamedev .game-slider { height: 930px; }
+
+
+#gamedev .game-stats {
+    padding: 0;
+    margin: 60px 0;
+    position: relative;
+}
+
+#gamedev .game-stats .wp-btn {
+    width: 174px;
+    display: inline-block;
+}
+
+#gamedev .game-stats .wp-btn img {
+    width: 100%;
+}
+
+#gamedev .game-stats li { margin-bottom: 40px; }
+
+.game-slider .swiper-slide { max-width: 100%; position: relative; overflow: hidden; }
+#gamedev .swiper-container { max-height: 930px; min-height: 500px; }
+
+.sweet-n-roll { background: url('../img/bg-sweet.jpg') 0 0 no-repeat; }
+
+.game-menu { position: absolute; left: 50%; top: 0px; z-index: 9; margin-left: -130px; }
+.game-menu li { float: left; padding: 10px 15px; text-align: center; position: relative; }
+.game-menu li a { display: block; width: 101px; height: 113px; vertical-align: middle; line-height: 113px; text-align: center; }
+.game-menu li:hover, .game-menu li.active { background: #e76c50; }
+.game-menu li:hover .v, .game-menu li.active .v { display: block; }
+.game-menu li .v { display: none; position: absolute; bottom: -11px; left: 50%; margin-left: -11px; background: url('../img/ico-pin.png') 0px 0px no-repeat; width: 22px; height: 11px; }
+
+/****************************About us*********************************/
+#about { background: #fff url('../img/bg-about.jpg') bottom left no-repeat; }
+
+#about h2 {
+    color: #1780be;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+#about h2 a {
+    color: #f37558;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+#about .emails {
+    width: 650px;
+    margin-top: 90px;
+}
+#about .emails b {
+    display: block;
+    color: #1780be;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: normal;
+}
+#about .emails a {
+    color: #f37558;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+#about .page-text { margin: 50px 0 60px; }
+.partners-container .page-title { margin-bottom: 0px; }
+
+.partners-logo-container {
+    min-height: 135px;
+    line-height: 135px;
+    vertical-align: middle;
+}
+
+.partners-logo-container img { max-height: 70px; }
+.partners-container { padding-left: 20px; }
+
+
+/******************Icons********************************/
+.icons {
+    background: url('../img/social-icons.png') 0 0 no-repeat;
+    display: inline-block;
+    background-size: 398px;
+}
+.ico-mail {  width: 77px; height: 62px; background-position: -21px -17px; }
+.ico-fb {  width: 67px; height: 62px; background-position: -142px -17px; }
+.ico-twi {  width: 67px; height: 62px; background-position: -225px -17px; }
+.ico-lin {  width: 67px; height: 62px; background-position: -318px -17px; }
+
+.icons.ico-mail:hover { background-position: -21px -102px; }
+.icons.ico-fb:hover { background-position: -142px -102px; }
+.icons.ico-twi:hover { background-position: -225px -102px; }
+.icons.ico-lin:hover { background-position: -318px -102px; }
+
+#about .social-icons { padding-top: 15px; }
+
+#about .icons.ico-mail { background-position: -21px -102px; }
+#about .icons.ico-fb { background-position: -142px -102px; }
+#about .icons.ico-twi { background-position: -225px -102px; }
+#about .icons.ico-lin { background-position: -318px -102px; }
+
+#about .icons.ico-mail:hover { background-position: -21px -272px; }
+#about .icons.ico-fb:hover { background-position: -142px -272px; }
+#about .icons.ico-twi:hover { background-position: -225px -272px; }
+#about .icons.ico-lin:hover { background-position: -318px -272px; }
+
+.arello-logos {
+    background: url('../img/arello-logos.png') 0 0 no-repeat;
+    display: inline-block;
+    width: 111px;
+    height: 168px;
+    background-size: 111px;
+}
+.arello-logos.logo1 { background-position: 0 0; }
+.arello-logos.logo2 { background-position: 0 -167px; }
+.arello-logos.logo3 { background-position: 0 -334px; }
+.arello-logos.logo4 { background-position: 0 -501px; }
+.arello-logos.logo5 { background-position: 0 -670px; }
+
+.cancel, .cancel:hover { color: #444; text-decoration: underline; }
+
+.message-alert {
+    display: none;
+    position: fixed;
+    top: 5%;
+    width: 50%;
+    left: 25%;
+    z-index: 10000
+}
+
+@media only screen and (min-width: 1921px) {
+    /*Mobile*/
+    #mobile h1 { max-width: 1100px}
+    #mobile .dive {
+        background: url('../img/tmp-dive-gide_1.png') 92% bottom no-repeat;
+        background-size: 500px;
+    }
+    /*Services*/
+    #products .background-wrapper {
+        background: #40619b url('../img/bg-pw_2500.png') left top no-repeat;
+    }
+
+    /*Game dev*/
+    #gamedev { background-size: 100%; }
+    #gamedev .gamedev-castle { background-size: 100%; }
+
+    /*about*/
+    #about {
+        background: #fff url('../img/bg-about_2500.png') left bottom  no-repeat;
+    }
+}
+
+/*Media*/
+@media only screen and (max-width: 1500px) and (min-width: 1201px) {
+    /*Global*/
+    .a-page h1 {
+        font-size: 80px;
+        line-height: 74px;
+    }
+
+    .a-page .content-left { padding-left: 170px; }
+    .a-page .content-right { padding-left: 40px; }
+
+    .a-page .list-about { padding: 0; line-height: 24px;}
+
+    .a-page .list-about b {
+        font-size: 45px;
+        line-height: 44px
+    }
+
+    .a-page .page-title { font-size: 25px; }
+
+    /*Mobile*/
+    #mobile h1 { margin-bottom: 115px; }
+    #mobile .dive {
+        background-size: 340px;
+        min-height: 700px;
+    }
+
+    .portfolio .portfolio-hover .text {
+        max-width: 350px;
+        margin: 80px auto 0;
+    }
+    /*Service*/
+	#products .pw-stats {
+        padding-top: 0;
+        padding-left: 0;
+        background-position: 0 7px;
+    }
+    #products .pw-link { padding-right: 20px; }
+
+    #products .pw-stats li:first-child b { padding-left: 95px; }
+
+    .pw-device { max-width: 311px}
+
+    #products .pw-device img { margin-top: 14px; }
+
+    .pw-clients .page-title { padding-left: 8px; }
+    .pw-logo  { padding: 0}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1281px) {
+    html[data-platform="android"] {
+  /*Global*/
+  /*Game dev*/
+  /*About*/ }
+    html[data-platform="android"] .pw-logo-item {
+        min-height: 92px;
+        line-height: 92px;
+        vertical-align: middle;
+    }
+
+  html[data-platform="android"] .a-page {
+    min-height: 730px; }
+  html[data-platform="android"] .a-page .content-left, html[data-platform="android"] .a-page .content-right {
+    padding-left: 80px;
+    padding-top: 40px; }
+  html[data-platform="android"] .a-page h1 {
+    font-size: 83px;
+    line-height: 78px;
+    max-width: 1000px;
+  }
+  html[data-platform="android"] .a-page .page-title {
+    font-size: 25px;
+    line-height: 26px; }
+  html[data-platform="android"] .a-page .list-about {
+    padding: 0; }
+
+  /*Menu*/
+  html[data-platform="android"] .menu {
+    display: none; }
+  html[data-platform="android"] .menu.top {
+    position: absolute;
+    background: none;
+    min-height: 200px;
+    float: left;
+    padding-bottom: 30px;
+    display: block;
+    width: auto;
+    text-align: left;
+    top: 33px; }
+  html[data-platform="android"] .menu.top .logo {
+    margin-top: 50px;
+    -webkit-animation: none;
+    left: 80px; }
+
+  /*Main*/
+  html[data-platform="android"] .main-nav {
+    margin-left: 185px;
+    padding-top: 96px;
+    margin-bottom: 0; }
+  html[data-platform="android"] .main-nav li {
+    margin-top: 17px; }
+  html[data-platform="android"] .main-nav li:first-child {
+    margin-top: 0; }
+  html[data-platform="android"] .main-nav a {
+    font-size: 78px;
+    line-height: 75px; }
+  html[data-platform="android"] .main-nav li.social-icons {
+    margin-top: 25px;
+    margin-bottom: 60px; }
+
+  /*Mobile*/
+  html[data-platform="android"] #mobile .mobile-stats {
+    margin-bottom: 40px;
+    padding-top: 33px; }
+  html[data-platform="android"] #mobile .mobile-stats li {
+    margin-top: 66px; }
+  html[data-platform="android"] #mobile .dive {
+    background: #fff url('../img/tmp-dive-gide_1.png') 90% bottom no-repeat;
+    padding-bottom: 2px;
+    margin: 0;
+    background-size: 394px auto;
+  }
+  html[data-platform="android"] #mobile .border-dive {
+    padding-right: 0; }
+  html[data-platform="android"] #mobile .portfolio {
+    padding-right: 40px; }
+
+  html[data-platform="android"] .a-page .page-title {
+    margin-bottom: 35px;
+  }
+
+  html[data-platform="android"] .portfolio-hover {
+    display: block;
+    background: none; }
+  html[data-platform="android"] .portfolio-hover .text {
+    padding-top: 0;
+    margin-top: 55px;
+    padding-bottom: 35px; }
+  html[data-platform="android"] .clients-logos [class^=col-] {
+    min-height: 130px;
+    line-height: 130px; }
+  html[data-platform="android"] .portfolio.blur img {
+    -webkit-filter: blur(0px);
+    -webkit-transform: translateZ(0);
+  }
+
+  /*Products*/
+  html[data-platform="android"] #products .background-wrapper { background: #40619b url('../img/bg-pw_mobile.png') left top no-repeat; }
+
+  html[data-platform="android"] #products .pw {
+    border: none; }
+  html[data-platform="android"] #products h1 {
+    position: relative;
+    margin-bottom: 400px;
+    max-width: 60%; }
+  html[data-platform="android"] .pw-device {
+    float: none;
+    width: 355px;
+    left: 59%;
+    background: url('../img/pw-device-mobile.png') 50% 50% no-repeat;
+    background-size: 100%;
+    height: 620px;
+    position: absolute;
+    top: 107px;
+    max-width: 558px;
+    z-index: 0; }
+  html[data-platform="android"] .pw-device img {
+    display: none; }
+  html[data-platform="android"] #products .pw-stats {
+    margin-top: -324px;
+    background-size: 60px;
+    padding-left: 0;
+    margin-bottom: 0; }
+  html[data-platform="android"] #products .pw-stats li {
+    margin-top: 33px;
+    margin-bottom: 0; }
+  html[data-platform="android"] #products .pw-stats li:first-child {
+    margin-top: 0; }
+  html[data-platform="android"] #products .pw-stats li:first-child b {
+    padding-left: 80px;
+    margin-top: -15px; }
+  html[data-platform="android"] #pwLogoCarousel {
+    height: 436px;
+    margin-left: -45px;
+  }
+  html[data-platform="android"] .pw-logo {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 850px; }
+  html[data-platform="android"] .pw-over {
+    max-width: 850px;
+    margin: 15px auto 0; }
+
+    html[data-platform="android"] #products .pw-link p {
+        padding: 0;
+        max-width: 506px;
+        margin: 10px auto 0;
+    }
+
+  html[data-platform="android"] .game-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 131px;
+    left: auto; }
+  html[data-platform="android"] #gamedev {
+    background: #fff url('../img/gamedev.jpg') right bottom no-repeat;
+    background-size: auto;
+  }
+  html[data-platform="android"] #gamedev .gamedev-castle {
+    background-position: -400px 100%;
+    padding-left: 30px; }
+  html[data-platform="android"] .fly1, html[data-platform="android"] .fly2 {
+    display: none; }
+  html[data-platform="android"] #gamedev .dragoon {
+    bottom: 200px;
+    top: auto;
+    left: 29%; }
+  html[data-platform="android"] .app-dragoon {
+    width: 300px; }
+  html[data-platform="android"] .sweet-n-roll h1 {
+    padding-left: 65px; }
+  html[data-platform="android"] #about {
+    background: #fff url('../img/bg-about.jpg') bottom left no-repeat; }
+  html[data-platform="android"] #about .page-text {
+    margin: 60px 0; }
+  html[data-platform="android"] #about h2 {
+    margin-bottom: 30px; }
+  html[data-platform="android"] #about .emails {
+    margin-top: 43px;
+    width: auto;
+    margin-bottom: 60px;
+  }
+
+  html[data-platform="android"] .partners-container { padding-left: 0; }
+
+  html[data-platform="android"] .partners-logo-container img { max-width: 100% }
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Global*/
+  .a-page {
+    min-height: 730px; }
+
+  .a-page .content-left, .a-page .content-right {
+    padding-left: 80px;
+    padding-top: 40px; }
+
+  /*.a-page .content-right { padding-top: 0; }*/
+  .a-page h1 {
+    font-size: 83px;
+    line-height: 78px;
+    max-width: 1000px;
+  }
+
+  .a-page .page-title {
+    font-size: 25px;
+    line-height: 26px; }
+
+  .a-page .list-about {
+    padding: 0; }
+
+  /*Menu*/
+  .menu {
+    display: none; }
+
+  .menu.top {
+    position: absolute;
+    background: none;
+    min-height: 200px;
+    float: left;
+    padding-bottom: 30px;
+    display: block;
+    width: auto;
+    text-align: left;
+    top: 33px; }
+
+  .menu.top .logo {
+    margin-top: 50px;
+    -webkit-animation: none;
+    left: 80px;
+  }
+
+  /*Main*/
+  .main-nav {
+    margin-left: 185px;
+    padding-top: 96px;
+    margin-bottom: 0; }
+
+  .main-nav li {
+    margin-top: 17px; }
+
+  .main-nav li:first-child {
+    margin-top: 0; }
+
+  .main-nav a {
+    font-size: 75px;
+    line-height: 75px; }
+
+  .main-nav li.social-icons {
+    margin-top: 25px;
+    margin-bottom: 60px; }
+
+  /*Mobile*/
+  #mobile .mobile-stats {
+    margin-bottom: 0;
+    padding-top: 33px; }
+
+  #mobile .mobile-stats li {
+    margin-top: 66px; }
+
+  #mobile .dive {
+    background: #fff url('../img/tmp-dive-gide_1.png') 90% bottom no-repeat;
+    padding-bottom: 2px;
+    margin: 0;
+    background-size: 394px auto;
+    min-height: 600px;
+  }
+
+  #mobile .border-dive {
+    border-right: none;
+    padding-right: 0; }
+
+  #mobile .portfolio {
+    padding-right: 40px; }
+
+  .portfolio-hover {
+    display: block;
+    background: none; }
+
+    .portfolio-hover .text {
+        padding-top: 0;
+        margin-top: 55px;
+        padding-bottom: 35px;
+        padding-right: 15px;
+    }
+
+  .clients-logos [class^=col-] {
+    min-height: 130px;
+    line-height: 130px; }
+
+  .portfolio.blur img {
+    -webkit-filter: blur(0px);
+    -webkit-transform: translateZ(0); }
+
+    /*Products*/
+    #products .background-wrapper { background: #40619b url('../img/bg-pw_mobile.png') left top no-repeat; }
+
+    #products .pw { border: none; }
+
+  #products h1 {
+    position: relative;
+    margin-bottom: 400px;
+    max-width: 60%; }
+
+  .pw-device {
+    float: none;
+    width: 355px;
+    left: 59%;
+    background: url('../img/pw-device-mobile.png') 50% 50% no-repeat;
+    background-size: 100%;
+    height: 620px;
+    position: absolute;
+    top: 107px;
+    max-width: 558px;
+    z-index: 0; }
+
+  .pw-device img {
+    display: none; }
+
+  #products .pw-stats {
+    margin-top: -324px;
+    background-size: 60px;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  #products .pw-stats li {
+    margin-top: 33px;
+    margin-bottom: 0; }
+
+  #products .pw-stats li:first-child {
+    margin-top: 0; }
+
+  #products .pw-stats li:first-child b {
+    padding-left: 80px;
+    margin-top: -15px; }
+
+  #pwLogoCarousel {
+    height: 436px;
+    margin-left: -45px;
+  }
+
+  .pw-logo {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 850px;
+  }
+
+  .pw-over {
+    max-width: 850px;
+    margin: 0 auto 15px;
+  }
+
+    #products .pw-link p {
+        padding: 0;
+        max-width: 506px;
+        margin: 10px auto 0;
+    }
+
+  /*Game dev*/
+    #gamedev {
+        background: #fff url('../img/gamedev.jpg') right bottom no-repeat;
+        background-size: auto;
+    }
+  .game-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 131px;
+    left: auto; }
+
+  #gamedev .gamedev-castle {
+    background: url('../img/gamedev-castle.png') -400px 100% repeat-x;
+    padding-left: 30px; }
+
+  .fly1, .fly2 {
+    display: none; }
+
+  #gamedev .dragoon {
+    bottom: 250px;
+    top: auto;
+    left: 300px;
+  }
+
+  .app-dragoon {
+    width: 300px; }
+
+  .sweet-n-roll h1 {
+    padding-left: 65px; }
+
+  /*About*/
+  #about {
+    background: #fff url('../img/bg-about.jpg') bottom left no-repeat; }
+
+  #about .page-text {
+    margin: 60px 0; }
+
+  #about h2 {
+    margin-bottom: 30px; }
+
+  #about .emails {
+    margin-top: 43px;
+    width: auto;
+    margin-bottom: 60px; }
+
+  .partners-container {
+    padding-left: 0;
+  }
+  .partners-logo-container img { max-width: 100% }
+ }
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  /* high priority*/
+  /*Global*/
+  .list-inline > li {
+    padding: 0; }
+
+  .a-page {
+    min-height: 800px; }
+
+  .a-page .content-left, .a-page .content-right {
+    padding-left: 45px;
+    padding-top: 30px; }
+
+  .a-page h1 {
+    font-size: 80px;
+    line-height: 75px;
+    margin-bottom: 40px; }
+
+  .clients-logos {
+    padding-right: 0; }
+
+  .sweet-n-roll h1 {
+    padding-left: 65px; }
+
+  /* Menu */
+  .menu.top {
+    height: 200px;
+    float: none;
+    padding-bottom: 0;
+    display: block;
+    top: 94px; }
+
+  .menu.top .logo {
+    margin-top: 0;
+    -webkit-animation: none;
+    left: 60px; }
+
+  /* main */
+  #main {
+    min-height: 935px; }
+
+  .main-nav {
+    margin-left: 30px;
+    padding-top: 292px; }
+
+  .main-nav a {
+    font-size: 60px;
+    line-height: 56px; }
+
+  /* mobile */
+  #mobile .dive {
+    background-size: 46%; }
+
+  #mobile .portfolio {
+    padding-right: 15px; }
+
+  /* services */
+  #products .pw {
+    padding-bottom: 0; }
+
+  #products h1 {
+    margin-bottom: 453px;
+    z-index: 1;
+    position: relative;
+    max-width: 465px;
+  }
+
+  #products .pw-stats {
+    margin-top: -365px;
+    background-size: 81px;
+    margin-bottom: 78px;
+    position: relative;
+    z-index: 2; }
+
+  #products .pw-stats li {
+    margin-top: 36px; }
+
+  #products .pw-stats li:first-child b {
+    padding-left: 94px;
+    margin-top: -30px; }
+
+    .pw-device {
+        background: url('../img/bg-pw-device_1.png') 50% 50% no-repeat;
+        background-size: 242px;
+        top: 163px;
+        left: 54%;
+    }
+
+  .pw-logo {
+    padding: 0; }
+
+  .pw-logo-item {
+    min-height: 100px;
+    line-height: 100px; }
+
+  #pwLogoCarousel {
+    height: 310px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .pw-clients .page-title {
+    padding-left: 0; }
+
+  /* Game dev */
+  #gamedev .gamedev-castle {
+    background-position: -506px 100%;
+    padding-left: 30px; }
+
+  #gamedev .dragoon {
+    bottom: 200px;
+    top: 24%;
+    left: 240px; }
+
+  /* About */
+  #about {
+    background: #fff url('../img/bg-about.jpg') bottom left no-repeat; }
+
+  #about h2 {
+    font-size: 42px; }
+
+  .partners-container .page-title {
+    margin-bottom: 20px; }
+
+  #about .emails {
+    margin-bottom: 0; }
+ }
+
+@media only screen and (max-width: 480px) {
+  /*Global*/
+  .a-page {
+    min-height: 640px; }
+
+  .a-page .content-left, .a-page .content-right {
+    padding: 30px 30px; }
+
+  .a-page .page-title {
+    font-size: 18px; }
+
+  .a-page h1 {
+    font-size: 50px;
+    line-height: 47px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    max-width: 330px
+  }
+
+  .a-page .list-about li {
+    font-size: 18px; }
+
+  .a-page .list-about b {
+    font-size: 30px;
+    line-height: 30px; }
+
+  .sweet-n-roll h1 {
+    padding-left: 65px; }
+
+  /*Menu*/
+  .menu.top {
+    padding-bottom: 0;
+    top: -15px;
+    height: 200px;
+    overflow: hidden; }
+
+  .arello-logos.logo1 {
+    background-position: 0 0;
+    background-size: 88%;
+    height: 140px; }
+
+  .menu.top .logo {
+    margin-top: 44px;
+    -webkit-animation: none;
+    left: 46px; }
+
+  /* main */
+  .main-nav {
+    margin-left: 15px;
+    padding-top: 184px; }
+
+  .main-nav a {
+    font-size: 40px;
+    line-height: 36px; }
+
+  .social-icons li {
+    padding: 0;
+    margin-right: -4px; }
+
+  .social-icons .list-inline {
+    white-space: nowrap; }
+
+  /* mobile */
+  #mobile .border-dive {
+    padding-bottom: 10px; }
+
+  #mobile .dive {
+    background-size: 320px auto;
+    background-position: left bottom;
+    height: 805px; }
+
+  #mobile .portfolio {
+    padding-right: 0; }
+
+  #mobile .mobile-stats {
+    margin-bottom: 0; }
+
+  #mobile .mobile-stats li {
+    margin-top: 22px; }
+
+  .portfolio .page-title {
+    margin: 0; }
+
+  .portfolio-hover .text {
+    font-size: 30px; }
+
+  .clients-logos {
+    padding: 0 15px; }
+
+  .clients-logos [class^=col-] {
+    min-height: 103px;
+    line-height: 100px; }
+
+  /* services */
+  #products h1 {
+    margin-bottom: 972px;
+    max-width: 342px; }
+
+  .pw-device {
+    left: 30px;
+    top: 358px;
+    width: 300px; }
+
+  #products .pw-stats {
+    background-size: 40px;
+    padding-left: 56px;
+    margin-top: -946px;
+    margin-bottom: 465px;
+    z-index: 100;
+    position: relative; }
+
+  #products .pw-stats li {
+    margin-top: 27px; }
+
+  #products .pw-stats li:first-child b {
+    padding-left: 0; }
+
+  #pwLogoCarousel {
+    height: 450px;
+    margin-left: 0;
+  }
+
+  .pw-logo-item {
+    min-height: 90px;
+    line-height: 90px; }
+
+  .pw-logo {
+    padding: 0; }
+
+  .pw-clients .page-title {
+    padding-left: 0; }
+
+    #products .pw-link {
+        padding-bottom: 20px;
+        padding-right: 0
+    }
+
+  #products .pw-link a {
+    font-size: 30px; }
+
+  #products .pw-link p {
+    padding: 0;
+    font-size: 16px; }
+
+  /* Game dev */
+  #gamedev .game-stats {
+    margin: 36px 0; }
+
+  #gamedev .game-stats li {
+    margin-bottom: 17px; }
+
+  #gamedev .gamedev-castle {
+    padding: 30px 15px;
+    background-size: 1500px;
+    background-position: -497px 100%; }
+
+  #gamedev .dragoon {
+    bottom: 21%;
+    left: 19%;
+    background-size: 100%;
+    width: 245px;
+    height: 245px;
+    z-index: 0; }
+
+  .app-dragoon {
+    width: 280px; }
+
+  /* About */
+  #about {
+    background: #fff url('../img/bg-about.jpg') bottom left no-repeat; }
+
+  #about h2 {
+    font-size: 42px; }
+
+  #about .content {
+    padding-left: 0; }
+
+  #about .page-text {
+    margin: 30px 0;
+    font-size: 16px; }
+
+  #about .emails {
+    margin-top: 40px;
+    margin-bottom: 0; }
+
+  #about .emails b {
+    font-size: 29px;
+    line-height: 27px; }
+
+  #about .emails a {
+    font-size: 11px; }
+
+  .partners-container .page-title {
+    margin-bottom: 10px;
+  }
+
+    .partners-logo-container {
+        min-height: 60px;
+        line-height: 60px;
+    }
+ }
+
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  /*Global*/
+  .a-page {
+    min-height: 500px;
+  }
+
+  .a-page h1 {
+    font-size: 44px;
+    line-height: 43px; }
+
+  /*Main*/
+  .main-nav a {
+    font-size: 34px;
+    line-height: 28px; }
+
+  /*Mobile*/
+  #mobile .dive {
+    background-size: 265px auto;
+    background-position: left bottom;
+    height: 715px;
+    min-height: 715px;
+  }
+
+  /*About*/
+  #about h2 {
+    font-size: 34px; }
+ }
+
+#products { overflow: hidden; }
