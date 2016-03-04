@@ -12,7 +12,7 @@
         
         diff += $('#ipad_frame').offset().left;
         
-        $('#ipad_background').css("background-position-x", diff);
+        $('#ipad_background').css("background-position", diff + 'px 0px');
         $('#ipad_background').css("background-size", IPAD_BG_WIDTH * scale + 1)
 
         var IPHONE_IMAGE_WIDTH = 294;
@@ -25,7 +25,7 @@
         
         diff += $('#iphone_frame').offset().left;
         
-        $('#iphone_background').css("background-position-x", diff);
+        $('#iphone_background').css("background-position", diff + 'px 0px');
         $('#iphone_background').css("background-size", IPHONE_BG_WIDTH * scale + 1)
     }
     
