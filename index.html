@@ -1,9 +1,43 @@
 
 <!DOCTYPE html>
     <script type="text/javascript">
-    var preloader = function() {
+    
+    var alignBackgrounds = function() {
+        var IPAD_IMAGE_WIDTH = 663;
+        var IPAD_BG_WIDTH = 576;
         
-            var allImages = '[{"y": "938", "src": "static/img/tmp-dive-gide.png", "x": "670"}, {"y": "1315", "src": "static/img/pw-device-mobile.png", "x": "800"}, {"y": "887", "src": "static/img/gamedev_SnR_hero.png", "x": "828"}, {"y": "254", "src": "static/img/logo-dragoon.png", "x": "232"}, {"y": "326", "src": "static/img/app-dragoon.png", "x": "798"}, {"y": "124", "src": "static/img/ico-wphone.png", "x": "348"}, {"y": "123", "src": "static/img/badge_windows_phone_store.png", "x": "475"}, {"y": "1206", "src": "static/img/bg-pw-device_2.png", "x": "560"}, {"y": "712", "src": "static/img/gamedev_SnR_clouds.png", "x": "1834"}, {"y": "1462", "src": "static/img/gamedev_SnR_castle.png", "x": "1122"}, {"y": "1120", "src": "static/img/bg-pw.png", "x": "2177"}, {"y": "192", "src": "static/img/logo-linkey.png", "x": "186"}, {"y": "11", "src": "static/img/ico-pin.png", "x": "22"}, {"y": "329", "src": "static/img/gamedev_SnR_logo.png", "x": "1016"}, {"y": "1548", "src": "static/img/bg-pw-device.png", "x": "688"}, {"y": "1400", "src": "static/img/bg-pw_2500.png", "x": "2542"}, {"y": "246", "src": "static/img/fly1.png", "x": "340"}, {}, {"y": "484", "src": "static/img/gamedev_SnR_hills.png", "x": "3778"}, {"y": "143", "src": "static/img/badge_android_store.png", "x": "414"}, {"y": "768", "src": "static/img/dragoon.png", "x": "856"}, {}, {}, {"y": "150", "src": "static/img/pw-logo.png", "x": "168"}, {"y": "1670", "src": "static/img/arello-logos.png", "x": "222"}, {"y": "44", "src": "static/img/wrating.png", "x": "222"}, {"y": "384", "src": "static/img/fly2-fire.png", "x": "922"}, {"y": "1510", "src": "static/img/bg-pw-device_1.png", "x": "678"}, {"y": "1300", "src": "static/img/bg-pw_mobile.png", "x": "1350"}, {}, {"y": "123", "src": "static/img/badge_apple_store.png", "x": "414"}, {"y": "1239", "src": "static/img/bg-about_2500.png", "x": "2554"}, {"y": "610", "src": "static/img/gamedev-castle.png", "x": "2044"}, {"y": "123", "src": "static/img/badge_windows_store.png", "x": "475"}, {"y": "39", "src": "static/img/mini-logo.png", "x": "40"}, {}, {"y": "123", "src": "static/img/main-logo.png", "x": "73"}, {"y": "680", "src": "static/img/social-icons.png", "x": "796"}, {"y": "446", "src": "static/img/gamedev-cloud.png", "x": "2600"}, {"y": "1266", "src": "static/img/gamedev-castle2.png", "x": "4240"}, {"y": "30", "src": "static/img/bg-nav.png", "x": "33"}, {"y": "931", "src": "static/img/tmp-dive-gide_1.png", "x": "800"}, {"y": "106", "src": "static/img/partners/l3.png", "x": "336"}, {"y": "106", "src": "static/img/partners/l1.png", "x": "494"}, {"y": "106", "src": "static/img/partners/l2.png", "x": "336"}, {"y": "248", "src": "static/img/logos/1_24.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_14.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_2.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_3.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_30.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_20.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_25.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_17.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_7.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_1.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_5.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_16.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_21.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_10.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_23.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_27.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_19.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_6.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_13.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_12.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_22.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_26.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_9.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_8.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_15.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_11.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_29.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_28.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_18.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_4.png", "x": "292"}, {"y": "260", "src": "static/img/portfolio/logo-1.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-7.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-6.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-2.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-9.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-4.png", "x": "440"}]';
+        var scale = $('#ipad_frame').width() / IPAD_IMAGE_WIDTH;
+        var diff = 43.5; //length of the left part of ipad frame
+        diff *= scale; //scale accordingly
+        
+        diff += $('#ipad_frame').offset().left;
+        
+        $('#ipad_background').css("background-position", diff);
+        $('#ipad_background').css("background-size", IPAD_BG_WIDTH * scale + 1)
+
+        var IPHONE_IMAGE_WIDTH = 294;
+        var IPHONE_BG_WIDTH = 246;
+        
+        var scale = $('#iphone_frame').width() / IPHONE_IMAGE_WIDTH;
+        var diff = 17; //length of the left part of iphone frame
+        
+        diff *= scale; //scale accordingly
+        
+        diff += $('#iphone_frame').offset().left;
+        
+        $('#iphone_background').css("background-position", diff);
+        $('#iphone_background').css("background-size", IPHONE_BG_WIDTH * scale + 1)
+    }
+    
+    var preloader = function() {
+    
+
+        $(window).on('resize', function(){
+            alignBackgrounds();
+        });
+        alignBackgrounds();
+        
+        var allImages = '[{"y": "938", "src": "static/img/tmp-dive-gide.png", "x": "670"}, {"y": "1315", "src": "static/img/pw-device-mobile.png", "x": "800"}, {"y": "887", "src": "static/img/gamedev_SnR_hero.png", "x": "828"}, {"y": "254", "src": "static/img/logo-dragoon.png", "x": "232"}, {"y": "326", "src": "static/img/app-dragoon.png", "x": "798"}, {"y": "124", "src": "static/img/ico-wphone.png", "x": "348"}, {"y": "123", "src": "static/img/badge_windows_phone_store.png", "x": "475"}, {"y": "1206", "src": "static/img/bg-pw-device_2.png", "x": "560"}, {"y": "712", "src": "static/img/gamedev_SnR_clouds.png", "x": "1834"}, {"y": "1462", "src": "static/img/gamedev_SnR_castle.png", "x": "1122"}, {"y": "1120", "src": "static/img/bg-pw.png", "x": "2177"}, {"y": "192", "src": "static/img/logo-linkey.png", "x": "186"}, {"y": "11", "src": "static/img/ico-pin.png", "x": "22"}, {"y": "329", "src": "static/img/gamedev_SnR_logo.png", "x": "1016"}, {"y": "1548", "src": "static/img/bg-pw-device.png", "x": "688"}, {"y": "1400", "src": "static/img/bg-pw_2500.png", "x": "2542"}, {"y": "246", "src": "static/img/fly1.png", "x": "340"}, {}, {"y": "484", "src": "static/img/gamedev_SnR_hills.png", "x": "3778"}, {"y": "143", "src": "static/img/badge_android_store.png", "x": "414"}, {"y": "768", "src": "static/img/dragoon.png", "x": "856"}, {}, {}, {"y": "150", "src": "static/img/pw-logo.png", "x": "168"}, {"y": "1670", "src": "static/img/arello-logos.png", "x": "222"}, {"y": "44", "src": "static/img/wrating.png", "x": "222"}, {"y": "384", "src": "static/img/fly2-fire.png", "x": "922"}, {"y": "1510", "src": "static/img/bg-pw-device_1.png", "x": "678"}, {"y": "1300", "src": "static/img/bg-pw_mobile.png", "x": "1350"}, {}, {"y": "123", "src": "static/img/badge_apple_store.png", "x": "414"}, {"y": "1239", "src": "static/img/bg-about_2500.png", "x": "2554"}, {"y": "610", "src": "static/img/gamedev-castle.png", "x": "2044"}, {"y": "123", "src": "static/img/badge_windows_store.png", "x": "475"}, {"y": "39", "src": "static/img/mini-logo.png", "x": "40"}, {}, {"y": "123", "src": "static/img/main-logo.png", "x": "73"}, {"y": "680", "src": "static/img/social-icons.png", "x": "796"}, {"y": "446", "src": "static/img/gamedev-cloud.png", "x": "2600"}, {"y": "1266", "src": "static/img/gamedev-castle2.png", "x": "4240"}, {"y": "30", "src": "static/img/bg-nav.png", "x": "33"}, {"y": "931", "src": "static/img/tmp-dive-gide_1.png", "x": "800"}, {"y": "106", "src": "static/img/partners/l3.png", "x": "336"}, {"y": "106", "src": "static/img/partners/l1.png", "x": "494"}, {"y": "106", "src": "static/img/partners/l2.png", "x": "336"}, {"y": "248", "src": "static/img/logos/1_24.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_14.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_2.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_3.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_30.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_20.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_25.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_17.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_7.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_1.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_5.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_16.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_21.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_10.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_23.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_27.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_19.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_6.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_13.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_12.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_22.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_26.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_9.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_8.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_15.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_11.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_29.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_28.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_18.png", "x": "292"}, {"y": "248", "src": "static/img/logos/1_4.png", "x": "292"}, {"y": "260", "src": "static/img/portfolio/logo-1.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-7.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-6.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-2.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-9.png", "x": "440"}, {"y": "260", "src": "static/img/portfolio/logo-4.png", "x": "440"}]';
         
         var image;
         var excludeImages = [
@@ -82,6 +116,7 @@
         <script type="text/javascript" src="static/js/assets/respond.min.js"></script>
         <script type="text/javascript" src="static/js/assets/scrollr.ie.js"></script>
     <![endif]-->
+
     <script type="text/javascript" src="static/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 
@@ -155,6 +190,15 @@
                             mobile platforms you need
                         </li>
                     </ul>
+
+                    <div class="iphone-ipad-holder">
+                      <div id="ipad_background" class="iphone-wrapper">
+                        <img id="ipad_frame" class="ipad" src="static/img/ipad.png" alt="">
+                        <div id="iphone_background" class="iphone">
+                            <img id="iphone_frame" src="static/img/iphone.png" alt="">
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-5 portfolio-box content-right">
