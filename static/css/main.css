@@ -1510,6 +1510,7 @@ label {
   background-image: url('../img/ipad_interface.png');
   background-repeat: no-repeat;
   background-position: 50% center;
+  -webkit-background-size: 576px 3650px;
 
   background-attachment: fixed;
   width: 80%;
@@ -1526,6 +1527,7 @@ label {
   /*background: url('../img/iphone_interface.png') repeat-y calc(38% + 8px) 0 #fff;*/
   background-image: url('../img/iphone_interface.png');
   background-repeat: repeat-y;
+  -webkit-background-size: 246px 2416px;
 
   background-attachment: fixed;
   z-index: 2;
