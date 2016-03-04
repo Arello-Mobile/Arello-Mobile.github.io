@@ -1509,7 +1509,7 @@ label {
   /*background: url('../img/ipad_interface.png') no-repeat 50% center;*/
   background-image: url('../img/ipad_interface.png');
   background-repeat: no-repeat;
-  background-position: 50% center;
+  background-position: 50% 0;
   -webkit-background-size: 576px 3650px;
 
   background-attachment: fixed;

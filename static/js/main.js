@@ -407,14 +407,14 @@ $(function() {
 });
 
 
-
+/*
 $(window).scroll(function() {
   var scrolledY = $(window).scrollTop();
 
   //$('#iphone_background').css("background-position-y", scrolledY + 'px');
   //$('#ipad_background').css("background-position-y", scrolledY-1500 + 'px');
 });
-
+*/
 
 
 // IE scroll jump issue fix
