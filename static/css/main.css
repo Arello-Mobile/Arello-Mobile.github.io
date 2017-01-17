@@ -578,8 +578,8 @@ label {
 .partners-container .page-title { margin-bottom: 0px; }
 
 .partners-logo-container {
-    min-height: 135px;
-    line-height: 135px;
+    min-height: 100px;
+    line-height: 100px;
     vertical-align: middle;
 }
 
