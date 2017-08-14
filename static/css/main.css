@@ -597,15 +597,15 @@ label {
 .ico-fb {  width: 67px; height: 62px; background-position: -142px -17px; }
 .ico-twi {  width: 67px; height: 62px; background-position: -225px -17px; }
 .ico-lin {  width: 67px; height: 62px; background-position: -318px -17px; }
-.ico-whatsapp {  width: 75px; height: 62px; background-position: -406px -17px; }
-.ico-viber {  width: 75px; height: 62px; background-position: -500px -17px; }
+.ico-viber {  width: 75px; height: 62px; background-position: -406px -17px; }
+.ico-whatsapp {  width: 75px; height: 62px; background-position: -500px -17px; }
 
 .icons.ico-mail:hover { background-position: -21px -102px; }
 .icons.ico-fb:hover { background-position: -142px -102px; }
 .icons.ico-twi:hover { background-position: -225px -102px; }
 .icons.ico-lin:hover { background-position: -318px -102px; }
-.icons.ico-whatsapp:hover { background-position: -406px -102px; }
-.icons.ico-viber:hover { background-position: -500px -102px; }
+.icons.ico-viber:hover { background-position: -406px -102px; }
+.icons.ico-whatsapp:hover { background-position: -500px -102px; }
 
 #about .social-icons { padding-top: 15px; }
 
@@ -613,15 +613,15 @@ label {
 #about .icons.ico-fb { background-position: -142px -102px; }
 #about .icons.ico-twi { background-position: -225px -102px; }
 #about .icons.ico-lin { background-position: -318px -102px; }
-#about .icons.ico-whatsapp { background-position: -406px -102px; }
-#about .icons.ico-viber { background-position: -500px -102px; }
+#about .icons.ico-viber { background-position: -406px -102px; }
+#about .icons.ico-whatsapp { background-position: -500px -102px; }
 
 #about .icons.ico-mail:hover { background-position: -21px -272px; }
 #about .icons.ico-fb:hover { background-position: -142px -272px; }
 #about .icons.ico-twi:hover { background-position: -225px -272px; }
 #about .icons.ico-lin:hover { background-position: -318px -272px; }
-#about .icons.ico-whatsapp:hover { background-position: -406px -272px; }
-#about .icons.ico-viber:hover { background-position: -500px -272px; }
+#about .icons.ico-viber:hover { background-position: -406px -272px; }
+#about .icons.ico-whatsapp:hover { background-position: -500px -272px; }
 
 .arello-logos {
     background: url('../img/arello-logos.png') 0 0 no-repeat;
@@ -655,15 +655,15 @@ label {
     .ico-fb {  width: 33px; height: 31px; background-position: -71px -9px; }
     .ico-twi {  width: 33px; height: 31px; background-position: -112px -9px; }
     .ico-lin {  width: 33px; height: 31px; background-position: -159px -9px; }
-    .ico-whatsapp {  width: 37px; height: 31px; background-position: -203px -9px; }
-    .ico-viber {  width: 37px; height: 31px; background-position: -250px -9px; }
+    .ico-viber {  width: 37px; height: 31px; background-position: -203px -9px; }
+    .ico-whatsapp {  width: 37px; height: 31px; background-position: -250px -9px; }
 
     .icons.ico-mail:hover { background-position: -10px -51px; }
     .icons.ico-fb:hover { background-position: -71px -51px; }
     .icons.ico-twi:hover { background-position: -112px -51px; }
     .icons.ico-lin:hover { background-position: -159px -51px; }
-    .icons.ico-whatsapp:hover { background-position: -203px -51px; }
-    .icons.ico-viber:hover { background-position: -250px -51px; }
+    .icons.ico-viber:hover { background-position: -203px -51px; }
+    .icons.ico-whatsapp:hover { background-position: -250px -51px; }
 
     #about .social-icons { padding-top: 7px; }
 
@@ -671,15 +671,15 @@ label {
     #about .icons.ico-fb { background-position: -71px -51px; }
     #about .icons.ico-twi { background-position: -112px -51px; }
     #about .icons.ico-lin { background-position: -159px -51px; }
-    #about .icons.ico-whatsapp { background-position: -203px -51px; }
-    #about .icons.ico-viber { background-position: -250px -51px; }
+    #about .icons.ico-viber { background-position: -203px -51px; }
+    #about .icons.ico-whatsapp { background-position: -250px -51px; }
 
     #about .icons.ico-mail:hover { background-position: -10px -136px; }
     #about .icons.ico-fb:hover { background-position: -71px -136px; }
     #about .icons.ico-twi:hover { background-position: -112px -136px; }
     #about .icons.ico-lin:hover { background-position: -159px -136px; }
-    #about .icons.ico-whatsapp:hover { background-position: -203px -136px; }
-    #about .icons.ico-viber:hover { background-position: -250px -136px; }
+    #about .icons.ico-viber:hover { background-position: -203px -136px; }
+    #about .icons.ico-whatsapp:hover { background-position: -250px -136px; }
 }
 
 @media only screen and (min-width: 1921px) {
